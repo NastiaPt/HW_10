@@ -1,0 +1,27 @@
+    1  cd Desktop
+    2  cd Homework
+    3  git config --global user.name "Anastasia Petryshyna"
+    4  git config --global user.email nastia.petryshyna95@gmail.com
+    5  git clone https://github.com/NastiaPt/HW_10.git
+    6  cd HW_10
+    7  touch text_ignore.txt
+    8  nano .gitignore
+    9  git status
+   10  nano .gitignore
+   11  git status
+   12  git add .gitignore
+   13  git commit -m "text_ignore.txt has been added to .gitignore"
+   14  touch main_test.txt
+   15  git add main_test.txt
+   16  git commit -m "main_test.txt file has been created"
+   17  git checkout -b develop
+   18  touch develop_test.txt
+   19  git add develop_test.txt
+   20  git commit -m "develop_test.txt has been created"
+   21  nano develop_test.txt
+   22  git status
+   23  git add develop_test.txt
+   24  git commit -m "develop_test.txt file has been modified"
+   25  git checkout main
+   26  git merge develop
+   27  git log
